@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="origin-trial" content= At93W2VjvYRb1QMS2GkaB54/UUZB9fSkYR1EuG6QoYYTRQxuNVoTP0ZonOPXD2dFXLJpixs7ktyDykELXo+/oQwAAABbeyJvcmlnaW4iOiJodHRwczovL2luc3NpYS5naXRodWIuaW86NDQzIiwiZmVhdHVyZSI6Ik5hdGl2ZUZpbGVTeXN0ZW0yIiwiZXhwaXJ5IjoxNTk5ODQxNjM5fQ== charset="utf-8">
+    <title>Web Audio API Loops Demo</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="./script.js" defer></script> -->
+</head>
+<body>
+
+<style>
+  .button {
+    background: #ededed;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .click {
+    background: #b1b1b1;
+
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+  }
+
+
+  .form{
+  	display: grid;
+  	grid-row-gap: 20px;
+  	grid-column-gap: 5px;
+
+  	grid-template-columns: repeat(3, 1fr);
+  }
+</style>
+
+
+<h1>Soundscapes.</h1>
+<p>Click any button to demo.</p>
+
+    <form class=form>
+        <button id="button-loop-1" type="button" class="button" value="1">Rain</button>
+		<input id="slider-1" type="range" min="0" max="100" value="50"> Rain Volume </input>
+
+        <!-- <button id="button-loop-2" type="button" class="button" value="2">Drip</button>
+		<input id="slider-2" type="range" min="0" max="100" value="50"> Drip Volume </input>
+
+		<button id="button-loop-3" type="button" class="button" value="3">Wind</button>
+		<input id="slider-3" type="range" min="0" max="100" value="50"> Wind Volume </input>
+
+        <button id="button-loop-4" type="button" class="button" value="4">Bird</button>
+		<input id="slider-4" type="range" min="0" max="100" value="50"> Bird Volume </input>
+
+        <button id="button-loop-5" type="button" class="button" value="5">Music</button>
+		<input id="slider-5" type="range" min="0" max="100" value="50"> Music Volume </input> -->
+
+		<input id="master_slider" type="range" min="0" max="200" value="100"> Master Volume </input>
+
+
+    </form>
+
+    <!-- <p>
+      Sample is cached: <span id="js-status">Unknown</span>
+    </p>
+    <p>
+      <button id="js-cache-btn">Cache file</button>
+      <button id="js-remove-cache-btn">Remove file from cache</button>
+    </p>
+    <p>
+      <audio src="http://drive.google.com/uc?export=open&id=1COKS6DDv-4l-cFx5l0pEI_TOapKhZUJB" controls></audio>
+    </p> -->
+
+
+
+<script src="./audio.js" ></script>
+
+<!-- <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+        .then(function(reg) {
+          console.log('Registration succeeded.');
+        }).catch(function(error) {
+          console.log('Registration failed with ' + error);
+        });
+      }
+</script> -->
+
+
+</body>
+</html>
